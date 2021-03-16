@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <div id="menu">
-        <li style="float:left"><a> Logo </a></li>
+    <div id="menu" class="menuText">
+        <li style="float:right"><a> Logo </a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#photos">My Photos</a></li>
         <li><a href="#playlist">My Playlist</a></li>
@@ -108,8 +108,6 @@
     <section id="playlist" class="section">
 
         <br/>
-        <br/>
-        <br/>
         <center>
             <h1>my playlist</h1>
         </center>
@@ -125,23 +123,17 @@
         <center>
             <h1>Give me a like</h1>
             <br/>
-            <br/>
             <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fbarifergan.github.io%2FthirdAgeWebsite%2F&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="174" height="46" style="border:none;overflow:hidden"
                 scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            <br/>
         </center>
     </section>
 
     <section id="qrcoder" class="section">
-        <br/>
         <center>
             <h1>Scan my code</h1>
-            <br/>
-            <br/>
-            <img src="Picture1.png" width=15% height=15% />
+            <img src="Picture1.png" width=13% height=13% />
             <br/>
         </center>
-        <br/>
     </section>
 
     <section id="spa" class="section">
@@ -173,12 +165,14 @@
             <br/> Comment:
             <br/>
             <p class="lead emoji-picker-container">
+                <textarea name="textArea" id="commentArea" cols="30" rows="10" style="display: none;"></textarea>
                 <textarea class="form-control textarea-control" id="textArea" placeholder="Write your massege here" data-emojiable="true"></textarea>
             </p>
             <br/>
-
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
+            <center>
+                <input type="submit" class="submit" value="Send">
+                <input type="reset" class="send" value="Reset">
+            </center>
         </form>
         <br/>
         <br/>
