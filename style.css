@@ -33,6 +33,27 @@ h1 {
     font-size: 40px;
 }
 
+h1:before,
+h1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h1:before {
+    right: 0.3em;
+    margin-left: -50%;
+}
+
+h1:after {
+    left: 0.3em;
+    margin-right: -50%;
+}
+
 
 /***************** Slideshow container *****************/
 
